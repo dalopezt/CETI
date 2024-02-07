@@ -16,6 +16,7 @@ Se reptite la evaluación para cada parcial:
 | Actividades y Tareas | 40 |
 | Examen | 40 |
 | Proyecto | 20 |
+
 *Nota: Relizar un programa que calcule o determine el valor de alguna de las variables vistas en cada parcial*.
 
 ### Problemario de estática
