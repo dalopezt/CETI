@@ -5,7 +5,7 @@
 - Explicación de tipos genéricos.
 
 ## Notas
-Es posible indicar tipos de datos genéricos como atributos de una clase, permitiendo así abstraer el comportamiento de una clase independientemente del tipo de dato con el que va a operar. Para hacer esto en ```C++``` se utiliza sigue de la siguiente forma:
+Es posible indicar tipos de datos genéricos como atributos de una clase, permitiendo así abstraer el comportamiento de una clase independientemente del tipo de dato con el que va a operar. Para hacer esto en ```C++``` se sigue de la siguiente forma:
 ```cpp
 template<class T>
 class ClassName 
