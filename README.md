@@ -1,2 +1,2 @@
 # CETI
-School notes
+Notas relacionadas con la escuela.
