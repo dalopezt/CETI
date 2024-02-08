@@ -35,6 +35,7 @@ class List
     {
         head = NULL;
     }
+    
     void ins(T value)
     {
         Node<T>* new_node = new Node<T>(value);
@@ -51,6 +52,7 @@ class List
         }
         aux->next = new_node;
     };
+
     void del(T value)
     {
         // Empty list
@@ -87,6 +89,7 @@ class List
         aux->next = temp->next;
         delete temp;
     } 
+
     void display()
     {
         Node<T>* aux = head;
@@ -126,5 +129,6 @@ int main()
     list.del(1);
     cout << "After sixth delete (1)" << endl;
     list.display();
+    cin.get();
     return 0;
 }
