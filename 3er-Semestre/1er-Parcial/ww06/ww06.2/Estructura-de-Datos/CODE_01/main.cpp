@@ -1,3 +1,16 @@
+/*
+@author: David Alejandro López Torres
+@id: 22310432
+@date: Feb 6th, 2024
+*/
+
+#define FPS 120
+#define L 5
+#define H 3
+#define x_0 0
+#define y_0 0
+#define F 0
+
 #include <iostream>
 #include <chrono>
 #include <thread>
@@ -141,7 +154,7 @@ void animation(Square s)
     {
         system("cls");
         s.display();
-        sleep_for(milliseconds(50));
+        sleep_for(milliseconds(3600/FPS));
         s.mov(1, 0);
     }
 
@@ -150,7 +163,7 @@ void animation(Square s)
     {
         system("cls");
         s.display();
-        sleep_for(milliseconds(50));
+        sleep_for(milliseconds(3600/FPS));
         s.mov(0, 1);
     }
 
@@ -159,7 +172,7 @@ void animation(Square s)
     {
         system("cls");
         s.display();
-        sleep_for(milliseconds(50));
+        sleep_for(milliseconds(3600/FPS));
         s.mov(-1, 0);
     }
 
@@ -168,14 +181,14 @@ void animation(Square s)
     {
         system("cls");
         s.display();
-        sleep_for(milliseconds(50));
+        sleep_for(milliseconds(3600/FPS));
         s.mov(0, -1);
     }
 }
 
 int main()
 {
-    Square s(0, 0, 5, 3, 0);
+    Square s(x_0, y_0, L, H, F);
     while(true)
     {
         animation(s);

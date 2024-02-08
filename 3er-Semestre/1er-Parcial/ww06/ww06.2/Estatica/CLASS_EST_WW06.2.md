@@ -1,4 +1,5 @@
 # Notas de Estática (01), Feb 6 2023 
+Por David Alejandro López Torres.
 ## Resumen
 - Presentación del profesor.
 - A qué les suena "estática".

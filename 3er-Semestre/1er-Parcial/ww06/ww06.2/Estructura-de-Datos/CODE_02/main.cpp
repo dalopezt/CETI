@@ -1,3 +1,9 @@
+/*
+@author: David Alejandro López Torres
+@id: 22310432
+@date: Feb 6th, 2024
+*/
+
 #include <iostream>
 using namespace std;
 

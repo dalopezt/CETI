@@ -1,4 +1,5 @@
 # Notas de Bases de Datos 1 (01), Feb 6 2023 
+Por David Alejandro López Torres.
 ## Resumen
 - Revisión de los requerimientos para el global.
 - Revisión del programa.

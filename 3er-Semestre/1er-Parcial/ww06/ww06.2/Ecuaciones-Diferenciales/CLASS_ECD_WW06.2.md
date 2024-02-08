@@ -1,4 +1,5 @@
 # Notas de Ecuaciones Diferenciales (01), Feb 6 2023 
+Por David Alejandro López Torres.
 ## Resumen
 - Presentación del profesor.
 - Presentación de los alumnos.

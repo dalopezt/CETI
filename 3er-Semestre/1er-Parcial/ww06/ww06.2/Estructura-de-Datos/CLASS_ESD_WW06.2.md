@@ -1,7 +1,8 @@
 # Notas de Estructura de Datos (01), Feb 6 2023 
+Por David Alejandro López Torres.
 ## Resumen
 - Plática breve con relación al curso
-- Repaso breve de estrucras de datos vistas en POO.
+- Repaso breve kde estrucras de datos vistas en POO.
 - Explicación de tipos genéricos.
 
 ## Notas
