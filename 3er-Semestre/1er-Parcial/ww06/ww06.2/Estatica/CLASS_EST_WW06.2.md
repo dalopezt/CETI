@@ -14,8 +14,8 @@ Estática es el estudio de los cuerpos en **equilibrio** (suma de fuerzas igual 
 Se reptite la evaluación para cada parcial:
 | Rubro | Procentaje |
 | - | - | 
-| Actividades y Tareas | 40 |
-| Examen | 40 |
+| Actividades y Tareas | 20 |
+| Examen | 60 |
 | Proyecto | 20 |
 
 *Nota: Relizar un programa que calcule o determine el valor de alguna de las variables vistas en cada parcial*.
