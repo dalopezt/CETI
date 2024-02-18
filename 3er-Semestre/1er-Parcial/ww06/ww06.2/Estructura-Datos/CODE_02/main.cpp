@@ -35,8 +35,20 @@ class List
     {
         head = NULL;
     }
+
+    int get_length()
+    {
+        int l = 0;
+        Node<T>* aux = head;
+        while (aux != NULL)
+        {
+            l++;
+            aux = aux->next;
+        }
+        return l;
+    }
     
-    void ins(T value)
+    void ins_end(T value)
     {
         Node<T>* new_node = new Node<T>(value);
         if (head == NULL)
@@ -53,7 +65,40 @@ class List
         aux->next = new_node;
     };
 
-    void del(T value)
+    void ins_first(T value) 
+    {
+        Node<T>* new_node = new Node<T>(value);
+        new_node->next = head;
+        head = new_node;
+    };
+
+    void ins_at_index(T value, int index)
+    {
+        if (index > get_length())
+        {
+            cout << "Value out of index" << end;
+            return;
+        }
+
+        if (index == 0)
+        {
+            ins_first(value);
+            return;
+        }
+
+        Node<T>* new_node = new Node<T>(value);
+        Node<T>* aux = head;
+        int l = get_length();
+        for (int i = 0; i < l-1; i++)
+        {
+            aux = aux->next;
+        }
+        
+        new_node->next = aux->next;
+        aux->next = new_node;
+    };
+
+    void del_first_instance(T value)
     {
         // Empty list
         if (head == NULL)
@@ -104,31 +149,6 @@ class List
 int main()
 {
     List<int> list;
-    list.ins(1);
-    list.ins(2);
-    list.ins(3);
-    list.ins(4);
-    list.ins(5);
-    cout << "Before delete" << endl;
-    list.display();
-    list.del(3);
-    cout << "After first delete (3)" << endl;
-    list.display();
-    list.del(1);
-    cout << "After second delete (1)" << endl;
-    list.display();
-    list.del(5);
-    cout << "After third delete (5)" << endl;
-    list.display();
-    list.del(2);
-    cout << "After forth delete (2)" << endl;
-    list.display();
-    list.del(4);
-    cout << "After fifth delete (4)" << endl;
-    list.display();
-    list.del(1);
-    cout << "After sixth delete (1)" << endl;
-    list.display();
     cin.get();
     return 0;
 }

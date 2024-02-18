@@ -1,0 +1,61 @@
+Usuarios [Done]
+- id
+- nombre
+- apellido
+- cuenta
+- password
+- id_rol
+
+Rol [Catalogo] [Done]
+- id
+- nombre
+- descripcion
+
+Categoria_Producto [Catalogo] [Done]
+- id
+- nombre
+- descripcion
+
+Categoria_Receta [Catalogo] [Done]
+- id
+- nombre
+- descripcion
+
+Unidades [Catalogo]
+- id
+- nombre
+- descripcion
+
+Productos
+- id
+- nombre
+- precio_unitario
+- vida_util
+- id_unidad
+- id_categoria_producto
+
+Inventario
+- id
+- existencia
+- fecha_compra
+- fecha_caducidad
+- id_producto
+
+Receta
+- id
+- nombre
+- tiempo_de_preparacion
+- id_categoria_receta
+- id_usuario [autor]
+
+Materiales_Receta
+- id
+- cantidad
+- id_receta
+- id_producto
+
+Paso_Receta
+- id
+- id_receta
+- descripcion
+- tiempo_de_preparacion

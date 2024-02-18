@@ -1,0 +1,66 @@
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5500.345508] mce: [Hardware Error]: Run the above through 'mcelog --ascii'
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5500.500677] Kernel panic - not syncing: Fatal machine check
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5501.558807] Shutting down cpus with NMI
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5500.344135] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5500.345502] mce: [Hardware Error]: TSC 962d9717255 MISC ea200000 
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5500.345504] mce: [Hardware Error]: PROCESSOR 0:a06d0 TIME 1705629176 SOCKET 1 APIC 200 microcode 80000593
+Jan 18, 2024 @ 19:52:59.416	fl41ca202hs0401	[ 5501.589014] Kernel Offset: disabled
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344104] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344127] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344088] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.345492] mce: [Hardware Error]: RIP !INEXACT! 10:<ffffffffa644be7e> {intel_idle_xstate+0x6e/0xc0}
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344119] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.345487] mce: [Hardware Error]: CPU 120: Machine Check Exception: 5 Bank 4: ba00000000000e0b
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344096] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.500671] mce: [Hardware Error]: Machine check: Processor context corrupt
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344080] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344070] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:59.415	fl41ca202hs0401	[ 5500.344111] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:58.990	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:58.860	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:58.616	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:58.469	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:58.192	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:58.067	fl41ca202hs0401	WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:56.924	fl41ca202hs0401	 5500.344059] mce: MCE records pool full!
+Jan 18, 2024 @ 19:52:56.924	fl41ca202hs0401	[WheaElogSwSmiCallback Enter
+Jan 18, 2024 @ 19:52:56.924	fl41ca202hs0401	[Mca] Clear Status
+Jan 18, 2024 @ 19:52:56.924	fl41ca202hs0401	ERROR: C00000002:V03071008 I0 C698D0D1-904A-42E9-8406-152A6FF6549B 7B043610
+Jan 18, 2024 @ 19:52:56.924	fl41ca202hs0401	[Mca]Successfully notify OS via MCE
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	WHEA: Detected Processor Error
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	[Mca]Find uncorrected error at CPU 240
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	[Mca]Sending OS notification via MCE
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	[WheaLog] Not supported for Memory Error or Processor error or any Ras non standard error
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	WHEA: Ignore Processor WHEA error now.
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	WHEA: Detected Ras Non Standard Error
+Jan 18, 2024 @ 19:52:56.923	fl41ca202hs0401	[WheaLog] Not supported for Memory Error or Processor error or any Ras non standard error
+Jan 18, 2024 @ 19:52:56.714	fl41ca202hs0401	 --Logging Uncorrected Error to WHEA
+Jan 18, 2024 @ 19:52:56.714	fl41ca202hs0401	S1 C0 T0 [Mca]McBankErrorHandler: Skt = 0x1, McBank = 0x4, State = 0x4
+Jan 18, 2024 @ 19:52:56.714	fl41ca202hs0401	[Mca]McaDetectAndHandle, severity = 0x1, Broadcast is 0x1
+Jan 18, 2024 @ 19:52:56.714	fl41ca202hs0401	ERROR: C00000002:V03071008 I0 C698D0D1-904A-42E9-8406-152A6FF6549B 7B043610
+Jan 18, 2024 @ 19:52:56.714	fl41ca202hs0401	S1 C0 T0 [CpuRas]MC status 0xBA00000000000E0B, class FATAL
+Jan 18, 2024 @ 19:52:56.713	fl41ca202hs0401	ERROR: C00000002:V03071008 I0 C698D0D1-904A-42E9-8406-152A6FF6549B 7B043610
+Jan 18, 2024 @ 19:52:56.713	fl41ca202hs0401	WHEA: Detected PCIe Error
+Jan 18, 2024 @ 19:52:56.713	fl41ca202hs0401	S1 C0 T0 [CpuRas]MC status 0xBA00000000000E0B, class FATAL
+Jan 18, 2024 @ 19:52:56.713	fl41ca202hs0401	S1 C0 T0 [CpuRas]MC status 0xBA00000000000E0B, class FATAL
+Jan 18, 2024 @ 19:52:56.690	fl41ca202hs0401	IEH NON FATAL ERROR 
+Jan 18, 2024 @ 19:52:56.690	fl41ca202hs0401	[IEH] BitIdx 0x3, ShareIdx 0x0
+Jan 18, 2024 @ 19:52:56.690	fl41ca202hs0401	[IEH] error device is (S:0x1 B:0xEA D:0x4 F:0x0) BitIdx 0x3, ShareIdx 0x0   [Device Error] error on skt:0x1 Bus:0xEA Device:0x4 func:0x0  
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[IEH] ErrorStatus 0x8, MaxBitIdx 0x11
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[IEH] error device is (S:0x1 B:0xEA D:0x0 F:0x4) BitIdx 0xD, ShareIdx 0x0 [IEH] error found at IEH(S:0x1 B:0xEA D:0x0 F:0x4) Sev: IEH NON FATAL ERROR 
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[Mca]ProcessSocketMcBankError: Inside the function
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	S1 C0 T0 [Mca]McBankErrorHandler: Skt = 0x1, McBank = 0x4, State = 0x2
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[IEH] ErrorStatus 0x2000, MaxBitIdx 0x1D
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[IEH] BitIdx 0xD, ShareIdx 0x0
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[Mca]McaDetectAndHandle, state is 0x1
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	PcieRootPortErrorHandler MailBox->PcieInitPar.SerrEmuTestEn = 0x0
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	[IEH] error found at IEH(S:0x1 B:0xFE D:0x2 F:0x0) Sev: IEH NON FATAL ERROR 
+Jan 18, 2024 @ 19:52:56.689	fl41ca202hs0401	IEH NON FATAL ERROR 
+Jan 18, 2024 @ 19:52:56.688	fl41ca202hs0401	[Mca]McaDetectAndHandle start
+Jan 18, 2024 @ 19:52:56.688	fl41ca202hs0401	[Mca]CheckMcBankErrorStatus returns TRUE
+Jan 18, 2024 @ 19:52:56.688	fl41ca202hs0401	[ProcessMcBanks] McBankBitField  0
+Jan 18, 2024 @ 19:52:56.688	fl41ca202hs0401	[Mca]McaDetectAndHandle, state is 0x0
+Jan 18, 2024 @ 19:52:56.688	fl41ca202hs0401	S1 C0 T0 [Mca]McBankErrorHandler: Skt = 0x1, McBank = 0x4, State = 0x1
+Jan 18, 2024 @ 19:52:56.258	fl41ca202hs0401	[ 5500.342340] bash[6789]:  SOL Heartbeat
+Jan 18, 2024 @ 19:52:27.951	fl41ca202hs0401	[ 5471.973354] bash[13834]:  temperature				: 38 C (311 K)
+Jan 18, 2024 @ 19:52:26.810	fl41ca202hs0401	[ 5470.888457] ip_heartbeat.sh[6721]:  lo               UNKNOWN        127.0.0.1/8 ::1/128
