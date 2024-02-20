@@ -15,11 +15,13 @@ class Menu
     List<option> _options;
 
     public:
+    Menu();
     Menu(std::string title, int len, option options[]);
     std::string optionsToString();
     int readOption();
     int executeOption(int option);
     void execute();
+    void loadMenu(std::string title, int len, option options[]);
 };
 
 #endif

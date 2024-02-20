@@ -5,7 +5,16 @@
 
 #include "menu.h"
 
+Menu::Menu(){}
+
 Menu::Menu(std::string title, int len, option options[])
+{
+    _title = title;
+    _len = len;
+    _options = List<option>(options, len);
+}
+
+void Menu::loadMenu(std::string title, int len, option options[])
 {
     _title = title;
     _len = len;

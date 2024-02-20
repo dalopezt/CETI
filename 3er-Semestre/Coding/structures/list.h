@@ -23,6 +23,11 @@ class List
     int insAtIndex(T value, int index);
     int delFirstInstance(T value); 
     bool contains(T value);
+    int clear();
+
+    List<T> operator+ (List<T> list);
+    List<T> operator+= (List<T> list);
+    List<T> operator--();
 };
 
 #endif

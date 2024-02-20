@@ -129,7 +129,7 @@ int List<T>::insAtIndex(T value, int index)
 
     Node<T>* new_node = new Node<T>(value);
     Node<T>* aux = _head;
-    for (int i = 0; i < l-1; ++i)
+    for (int i = 0; i < index-1; ++i)
     {
         aux = aux->next;
     }
@@ -202,6 +202,62 @@ bool List<T>::contains(T value)
         aux = aux->next;
     }
     return false;
+}
+
+/**
+ * @retval: 0 => List cleared successfully.
+*/
+template <class T>
+int List<T>::clear()
+{
+    // Return if already clean
+    if (this->getLength() == 0)
+    {
+        return 0;
+    }
+
+    Node<T>* aux;
+    while (_head != nullptr)
+    {
+        aux = _head->next;
+        delete _head;
+        _head = aux;  
+    }
+    return 0;
+}
+
+template <class T>
+List<T> List<T>::operator+(List<T> list)
+{
+    List<T> new_list;
+    new_list += *this;
+    new_list += list;
+    return new_list;
+}
+
+template <class T>
+List<T> List<T>::operator+=(List<T> list)
+{
+    int l = list.getLength();
+    for (int i = 0; i < l; ++i)
+    {
+        this->insBack(list.getNodeAtIndex(i)->value);
+    }
+    return *this;
+}
+
+template <class T>
+List<T> List<T>::operator--()
+{
+    if (_head == nullptr)
+    {
+        return *this;
+    }
+
+    Node<T>* aux = _head->next;
+    delete _head;
+    _head = aux;
+    return *this;
 }
 
 // Explicit instantiation for int and string
