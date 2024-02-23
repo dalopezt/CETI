@@ -1,3 +1,8 @@
+/**
+ * @author: David Lopez.
+ * @date: Feb 18th, 2024.
+*/
+
 #ifndef NODE_H
 #define NODE_H
 #include "../com/com.h"

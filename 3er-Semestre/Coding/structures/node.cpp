@@ -24,6 +24,6 @@ Node<T>::Node(T value)
     this->next = nullptr;
 }
 
-// Explicit instantiation for int
+// Explicit instantiation for int and option
 template class Node<int>;
 template class Node<option>;
