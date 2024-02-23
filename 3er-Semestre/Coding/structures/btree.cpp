@@ -127,13 +127,19 @@ List<T> BTree<T>::getPreOrder()
 template <class T>
 void BTree<T>::getPreOrderWithRef(List<T>* list, BNode<T>* ref)
 {
-    // If there's no node at left, we must add the current node.
+    // If ref == null -> binary tree is empty
+    if (ref == nullptr)
+    {
+        return;
+    }
+
+    // If there's no node on left, we must add the current node.
     if (ref->left == nullptr)
     {
         Node<T>* new_node = new Node<T>(ref->value);
         list->insBack(new_node->value);
 
-        // If there's no node at right, we finished this node.
+        // If there's no node on right, we finished this node.
         if (ref->right == nullptr)
         {
             return;
@@ -151,7 +157,7 @@ void BTree<T>::getPreOrderWithRef(List<T>* list, BNode<T>* ref)
         Node<T>* new_node = new Node<T>(ref->value);
         list->insBack(new_node->value);
         
-        // Check if there's something at right side
+        // Check if there's something on right side
         if (ref->right == nullptr)
         {
             return;
