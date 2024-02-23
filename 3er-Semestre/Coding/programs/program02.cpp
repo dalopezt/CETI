@@ -48,7 +48,7 @@ Program02::Program02()
     option opt9 = {"Delete first element of the list (operator-- prefix)", f9};
     option options[] = { opt1, opt2, opt3, opt4, opt5, opt6, opt7, opt8, opt9 };
 
-    this->_desc = "Creates a list of integers from a template list and operates on it.";
+    this->_desc = "Create a list of integers from a template list and operates on it.";
     _menu.loadMenu("Program 02 menu: List", 9, options);
 }
 

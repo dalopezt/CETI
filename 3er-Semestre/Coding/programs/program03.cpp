@@ -23,7 +23,7 @@ Program03::Program03()
     option opt3 = {"Print Pre Order Binary List", f3};
     option options[] = { opt1, opt2, opt3 };
 
-    this->_desc = "Creates a binary tree of integers and operates on it.";
+    this->_desc = "Create a binary tree of integers and operates on it.";
     this->_menu.loadMenu("Program 03 menu. Binary Tree", 3, options);
 }
 
