@@ -133,39 +133,20 @@ void BTree<T>::getPreOrderWithRef(List<T>* list, BNode<T>* ref)
         return;
     }
 
-    // If there's no node on left, we must add the current node.
-    if (ref->left == nullptr)
-    {
-        Node<T>* new_node = new Node<T>(ref->value);
-        list->insBack(new_node->value);
-
-        // If there's no node on right, we finished this node.
-        if (ref->right == nullptr)
-        {
-            return;
-        }
-        // Otherwise, mov down to right side
-        else
-        {
-            getPreOrderWithRef(list, ref->right);
-        }
-    }
-    // Otherwise, mov down to left side
-    else
+    // Go left
+    if (ref->left != nullptr)
     {
         getPreOrderWithRef(list, ref->left);
-        Node<T>* new_node = new Node<T>(ref->value);
-        list->insBack(new_node->value);
-        
-        // Check if there's something on right side
-        if (ref->right == nullptr)
-        {
-            return;
-        }
-        else
-        {
-            getPreOrderWithRef(list, ref->right);
-        }
+    }
+
+    // Insert node
+    Node<T>* new_node = new Node<T>(ref->value);
+    list->insBack(new_node->value);
+
+    // Go right
+    if (ref->right != nullptr)
+    {
+        getPreOrderWithRef(list, ref->right);
     }
 }
 

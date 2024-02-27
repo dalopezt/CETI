@@ -1,0 +1,1 @@
+g++ -o main main.cpp .\graphics\*.cpp .\menu\*.cpp .\programs\*.cpp .\structures\*.cpp

@@ -1,0 +1,86 @@
+Feb 9, 2024 @ 07:04:58.534	fl41ca202fs0602	WheaElogSwSmiCallback Enter
+Feb 9, 2024 @ 07:04:58.534	fl41ca202fs0602	BSP sync with APs timeout in SmmRuntimeCtlExit!
+Feb 9, 2024 @ 07:04:58.534	fl41ca202fs0602	BSP sync with APs timeout in SmmRuntimeCtlExit!
+Feb 9, 2024 @ 07:04:55.686	fl41ca202fs0602	[198059.881799] Shutting down cpus with NMI
+Feb 9, 2024 @ 07:04:55.686	fl41ca202fs0602	[198060.350269] Kernel Offset: disabled
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876110]  ? sysvec_apic_timer_interrupt+0xa1/0xd0
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876188]  ? __pfx_kthread+0x10/0x10
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876190]  ret_from_fork+0x31/0x50
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876174]  ? __pfx_worker_thread+0x10/0x10
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876141]  ? _raw_spin_unlock_irqrestore+0x22/0x40
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876226]  ret_from_fork_asm+0x1b/0x30
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876224]  ? __pfx_kthread+0x10/0x10
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876176]  kthread+0x103/0x140
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876136]  ? __pfx_rcu_exp_handler+0x10/0x10
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876153]  __sync_rcu_exp_select_node_cpus+0x2a2/0x400
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876170]  worker_thread+0x290/0x3a0
+Feb 9, 2024 @ 07:04:55.685	fl41ca202fs0602	[198058.876241]  </TASK>
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876139]  ? smp_call_function_single+0x146/0x180
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876157]  process_one_work+0x14d/0x320
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876093]  ? hrtimer_interrupt+0x105/0x240
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876097]  ? __sysvec_apic_timer_interrupt+0x74/0x190
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876058]  <IRQ>
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876078]  ? __pfx_watchdog_timer_fn+0x10/0x10
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876124]  </IRQ>
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876126]  ? asm_sysvec_apic_timer_interrupt+0x1a/0x20
+Feb 9, 2024 @ 07:04:55.684	fl41ca202fs0602	[198058.876125]  <TASK>
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876043] R13: ffffffff9820ac30 R14: 0000000000000000 R15: ffffffff9e47cb40
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876047] CR2: 00007ffe69d6d080 CR3: 00000386fcbe2001 CR4: 0000000000f71ee0
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876044] FS:  0000000000000000(0000) GS:ff11039d70080000(0000) knlGS:0000000000000000
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876067]  ? watchdog_timer_fn+0x240/0x2b0
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876042] R10: 0000000000000286 R11: 000000000002a620 R12: 000000000000005f
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876080]  ? __hrtimer_run_queues+0x121/0x2d0
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876046] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876048] PKRU: 55555554
+Feb 9, 2024 @ 07:04:55.683	fl41ca202fs0602	[198058.876051] Call Trace:
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.875984] CPU: 190 PID: 1238842 Comm: kworker/190:1 Tainted: G S    D W  O L      6.6.0-gnr.bkc.6.6.12.6.18.x86_64 #1
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.875873]  nft_chain_nat nf_nat qat_4xxxvf(O) usdm_drv(O) xt_mark xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 xt_comment nft_compat nf_tables nfnetlink i10nm_edac nfit x86_pkg_temp_thermal intel_powerclamp coretemp cfg80211 isst_tpmi intel_rapl_tpmi intel_uncore_frequency_tpmi intel_rapl_common isst_tpmi_core intel_uncore_frequency_common ofpart iTCO_wdt spi_nor pmt_telemetry intel_pmc_bxt kvm_intel qat_4xxx(O) cxl_pmem cxl_port mtd iTCO_vendor_support intel_vsec_tpmi pmt_class intel_sdsi sunrpc kvm dax_hmem intel_qat(O) isst_if_mmio dlb2(O) uio mdev idxd_vdev isst_if_common vfio_common vfio_iommu_type1 spi_intel_pci spi_intel i2c_i801 vfio i2c_smbus intel_vsec cxl_acpi cxl_core ipmi_ssif ipmi_si iaa_crypto ast crc32c_intel ice drm_shmem_helper igb idxd dca vidxd_core vfio_pci_ims irqbypass intel_ifs overlay br_netfilter bridge stp llc ipmi_poweroff fuse
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876037] RAX: 0000000000000001 RBX: ff11039d700aefc0 RCX: 0000000000000000
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.875997] Workqueue: rcu_par_gp sync_rcu_exp_select_node_cpus
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.789167] Kernel panic - not syncing: Fatal exception
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876040] RDX: 0000000000000000 RSI: ff11039d700aefc0 RDI: ffffffff9a27be4a
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876041] RBP: ffa00000ab09be18 R08: 000000000000000f R09: ffffffff9e47cb50
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876034] RSP: 0018:ffa00000ab09bda0 EFLAGS: 00000202
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876031] Code: e9 71 ff ff ff e8 1a 4e 20 01 48 c7 c3 c0 ef 02 00 89 c0 48 03 1c c5 20 f9 41 9a 8b 43 08 48 89 de a8 01 74 09 f3 90 8b 46 08 <a8> 01 75 f7 83 4e 08 01 44 89 e7 4c 89 6e 10 4c 89 76 18 e8 32 fd
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.875992] Hardware name: Intel Corporation BeechnutCity/BeechnutCity, BIOS BHSDCRB1.IPC.2963.D03.2401240221 01/24/2024
+Feb 9, 2024 @ 07:04:55.682	fl41ca202fs0602	[198058.876019] RIP: 0010:smp_call_function_single+0x146/0x180
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.786854]  xt_MASQUERADE
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.743040]  nf_conntrack_netlink
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.778685] PKRU: 55555554
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.753722]  xt_nat
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.775779]  ipt_REJECT nf_reject_ipv4
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.764306]  xt_statistic xt_addrtype
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.767603] CR2: 0000000000000048 CR3: 0000001b38c32001 CR4: 0000000000f71ee0
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.745551] FS:  0000000000000000(0000) GS:ff1103dd6fb80000(0000) knlGS:0000000000000000
+Feb 9, 2024 @ 07:04:55.681	fl41ca202fs0602	[198058.756137] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Feb 9, 2024 @ 07:04:53.100	fl41ca202fs0602	[198058.741213] R13: 0000000000000000 R14: ff1103dd6fbae000 R15: 0000000000000000
+Feb 9, 2024 @ 07:04:52.981	fl41ca202fs0602	[198058.731789] R10: 000000010bc94331 R11: ff11007f701c0000 R12: 0000000000000000
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.654753]  ip_set_hash_net
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.688993]  vxlan
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.705996] RBP: ff1103dd6fbae000 R08: 0000000000000000 R09: ffffff0000000000
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.737816]  veth
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.702892]  ip6_udp_tunnel
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.671880]  ip_set
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.697554] RDX: 0000000000000000 RSI: 0000000000000000 RDI: ff1103dd6fbae000
+Feb 9, 2024 @ 07:04:52.980	fl41ca202fs0602	[198058.727232]  udp_tunnel
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.629081] Code: cc cc cc 66 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 0f 1f 44 00 00 41 54 55 48 89 fd 53 48 3b 77 58 48 89 f3 74 7d <8b> 43 48 85 c0 74 31 8b 05 3e 3e 1b 07 85 c0 0f 8f a0 00 00 00 48
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.624810]  xt_multiport
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.637638]  ipt_rpfilter ip_set_hash_ip
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.615299] RIP: 0010:set_next_entity+0x15/0x1a0
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.646191] RSP: 0018:ffa00000ba967c10 EFLAGS: 00010046
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.680440] RAX: 0000000000000000 RBX: 0000000000000000 RCX: 0000000000000000
+Feb 9, 2024 @ 07:04:52.979	fl41ca202fs0602	[198058.663316] 
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.611067] ice 0000:3b:00.0: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	BSP sync with APs timeout in SmmRuntimeCtlExit!
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	BSP sync with APs timeout in SmmRuntimeCtlExit!
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.611045] ice 0000:c9:00.1: 3157 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.610887] ice 0000:3d:00.0: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.610764] ice 0000:c9:00.3: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.609347] Modules linked in: xt_set
+Feb 9, 2024 @ 07:04:52.828	fl41ca202fs0602	[198058.610315] ice 0000:95:00.0: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.827	fl41ca202fs0602	[198058.610042] ice 0000:c9:00.0: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.827	fl41ca202fs0602	[198058.609340] watchdog: BUG: soft lockup - CPU#190 stuck for 78778s! [kworker/190:1:1238842]
+Feb 9, 2024 @ 07:04:52.827	fl41ca202fs0602	[198058.610050] ice 0000:c9:00.2: 3162 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.827	fl41ca202fs0602	[198058.611059] ice 0000:97:00.0: 3097 msecs passed between update to cached PHC time
+Feb 9, 2024 @ 07:04:52.827	fl41ca202fs0602	[198058.609339] pstore: backend (erst) writing error (-22)
+Feb 9, 2024 @ 07:04:52.330	fl41ca202fs0602	WheaElogSwSmiCallback Enter
